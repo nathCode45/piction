@@ -1,0 +1,844 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--    Category Word Arrays   -->
+    <string-array name="objects_easy">
+        <item>Pencil</item>
+        <item>Drum</item>
+        <item>Water</item>
+        <item>Ice</item>
+        <item>Strawberry</item>
+        <item>Waffles</item>
+        <item>Bubble</item>
+        <item>Rainbow</item>
+        <item>Banana peel</item>
+        <item>Fireworks</item>
+        <item>Beehive</item>
+        <item>Planet</item>
+        <item>Bunk bed</item>
+        <item>Igloo</item>
+        <item>Ketchup</item>
+        <item>Light</item>
+        <item>Carrot</item>
+        <item>Mountain</item>
+        <item>Mouth</item>
+        <item>Anchor</item>
+        <item>Arm</item>
+        <item>Pancake</item>
+        <item>Bucket</item>
+        <item>Balloon</item>
+        <item>Doll</item>
+        <item>Book</item>
+        <item>Feet</item>
+        <item>Pyramid</item>
+        <item>Candy cane</item>
+        <item>Beard</item>
+        <item>Ear</item>
+        <item>Hook</item>
+        <item>Stairs</item>
+        <item>Cup</item>
+        <item>Clover</item>
+        <item>Lighthouse</item>
+        <item>Clock</item>
+        <item>Chair</item>
+        <item>Blade</item>
+        <item>Clothes</item>
+        <item>Jewel</item>
+        <item>Truck</item>
+        <item>Tongue</item>
+        <item>Mail</item>
+        <item>Phone</item>
+        <item>Cracker</item>
+        <item>Anvil</item>
+        <item>Basket</item>
+        <item>Bookmark</item>
+        <item>Razor</item>
+        <item>Top Hat</item>
+        <item>Cereal</item>
+        <item>Onion</item>
+        <item>Marshmallow</item>
+        <item>Dog Collar</item>
+        <item>Cloud</item>
+        <item>Stilts</item>
+        <item>Pinky</item>
+        <item>Chimney</item>
+        <item>Saw</item>
+        <item>Pizza</item>
+        <item>Slipper</item>
+        <item>Lollipop</item>
+        <item>Ladder</item>
+        <item>Outlet</item>
+    </string-array>
+    <string-array name="objects_medium">
+        <item>Ticket</item>
+        <item>Record</item>
+        <item>Shampoo</item>
+        <item>Shade</item>
+        <item>Cushion</item>
+        <item>Rim</item>
+        <item>Poodle</item>
+        <item>Monday</item>
+        <item>Landscape</item>
+        <item>Salt and Pepper</item>
+        <item>Ironing board</item>
+        <item>Atom</item>
+        <item>Bacon and Eggs</item>
+        <item>Peanut</item>
+        <item>First Base</item>
+        <item>Paintbrush</item>
+        <item>Bottle</item>
+        <item>Wrecking Ball</item>
+        <item>Pajamas</item>
+        <item>Faucet</item>
+        <item>Thermostat</item>
+        <item>Straw</item>
+        <item>Sidewalk</item>
+        <item>Chopsticks</item>
+        <item>Violin</item>
+        <item>Snow</item>
+        <item>Wrist</item>
+        <item>Lung</item>
+        <item>Knife</item>
+        <item>Coral</item>
+        <item>Speaker</item>
+        <item>Coffeepot</item>
+        <item>Glove</item>
+        <item>Ant hill</item>
+        <item>Airport</item>
+        <item>Fang</item>
+        <item>Tomato</item>
+        <item>Fingernail</item>
+        <item>Checkers</item>
+        <item>Shoelace</item>
+        <item>Tape</item>
+        <item>Guitar</item>
+        <item>Cannon</item>
+        <item>License Plate</item>
+        <item>Right hand</item>
+        <item>Wrist watch</item>
+        <item>Almond</item>
+        <item>Nostril</item>
+        <item>Plastic bag</item>
+        <item>Pastry</item>
+        <item>Medal</item>
+        <item>Drug</item>
+        <item>Note</item>
+        <item>Tank</item>
+        <item>Hole</item>
+        <item>Menu</item>
+        <item>Liquid</item>
+        <item>Missile</item>
+        <item>Banjo</item>
+        <item>Cheek</item>
+        <item>Magnet</item>
+        <item>Goal Post</item>
+        <item>Stump</item>
+        <item>Bookcase</item>
+        <item>Tusk</item>
+        <item>Alarm</item>
+        <item>Bicep</item>
+        <item>Centerpiece</item>
+        <item>Tumbleweed</item>
+        <item>Scarf</item>
+        <item>Poison</item>
+        <item>Perfume</item>
+        <item>Oven</item>
+        <item>Cable</item>
+        <item>Flagpole</item>
+        <item>Chairlift</item>
+        <item>Lantern</item>
+        <item>Wreath</item>
+        <item>Continent</item>
+        <item>Straw Hat</item>
+        <item>Beak</item>
+        <item>Gate</item>
+        <item>Flask</item>
+        <item>Deck</item>
+        <item>Pineapple</item>
+        <item>Confetti</item>
+        <item>Bulldozer</item>
+    </string-array>
+    <string-array name="objects_hard">
+        <item>Plastic</item>
+        <item>Database</item>
+        <item>Prism</item>
+        <item>Hinge</item>
+        <item>Pouch</item>
+        <item>Police Car</item>
+        <item>Antacid</item>
+        <item>Ice Cube</item>
+        <item>Ink</item>
+        <item>Mattress</item>
+        <item>Motor</item>
+        <item>Lava</item>
+        <item>Mouthwash</item>
+        <item>Bruise</item>
+        <item>Totem Pole</item>
+        <item>King-sized Bed</item>
+        <item>String</item>
+        <item>Yoke</item>
+        <item>Bill</item>
+        <item>Moonlight</item>
+        <item>Lifeboat</item>
+        <item>Trench</item>
+        <item>Puppet</item>
+        <item>Metal</item>
+        <item>Passport</item>
+        <item>Advertisement</item>
+
+        <item>Nozzle</item>
+        <item>Harpoon</item>
+        <item>Strait Jacket</item>
+        <item>Ballot</item>
+        <item>Shirley Temple</item>
+        <item>Carnation</item>
+        <item>Grape Vine</item>
+        <item>Dental Floss</item>
+        <item>Taste Bud</item>
+        <item>Parking Meter</item>
+        <item>Bridle</item>
+        <item>Swiss Cheese</item>
+        <item>Appliance</item>
+        <item>Toupee</item>
+        <item>Painting</item>
+        <item>Blow Pipe</item>
+        <item>Pollen</item>
+        <item>Discus</item>
+        <item>Cyclone</item>
+    </string-array>
+
+
+    <string-array name="persons_easy">
+        <item>Shrek</item>
+        <item>King</item>
+        <item>Pirate</item>
+        <item>Cowboy</item>
+        <item>Doctor</item>
+        <item>Santa Clause</item>
+        <item>Baby</item>
+        <item>Vampire</item>
+        <item>Women</item>
+        <item>Firefighter</item>
+        <item>Mom</item>
+        <item>Referee</item>
+        <item>Fisherman</item>
+        <item>Football player</item>
+        <item>Farmer</item>
+        <item>Barber</item>
+        <item>Astronaut</item>
+        <item>Pilot</item>
+        <item>Painter</item>
+        <item>Photographer</item>
+        <item>Surfer</item>
+        <item>Sailor</item>
+        <item>Soldier</item>
+        <item>Witch</item>
+        <item>Boxer</item>
+        <item>Mailman</item>
+        <item>Boy</item>
+        <item>Girl</item>
+        <item>Adult</item>
+        <item>Kid</item>
+        <item>Ghost</item>
+    </string-array>
+    <string-array name="persons_medium">
+        <item>Thief</item>
+        <item>President</item>
+        <item>Rapper</item>
+        <item>Husband</item>
+        <item>Secretary</item>
+        <item>Grandmother</item>
+        <item>Cupid</item>
+        <item>Scientist</item>
+        <item>Bartender</item>
+        <item>Nurse</item>
+        <item>Police officer</item>
+        <item>Professor</item>
+        <item>Criminal</item>
+        <item>Body guard</item>
+        <item>Teacher</item>
+        <item>Paleontologist</item>
+        <item>Detective</item>
+        <item>Surgeon</item>
+        <item>Bus driver</item>
+        <item>Carpenter</item>
+        <item>Electrician</item>
+        <item>Mechanic</item>
+        <item>Plumber</item>
+        <item>Student</item>
+        <item>Teenager</item>
+        <item>Twin</item>
+        <item>Show host</item>
+        <item>Priest</item>
+        <item>Babysitter</item>
+        <item>Architect</item>
+        <item>Diver</item>
+        <item>Brother</item>
+        <item>Cowgirl</item>
+        <item>Caddie</item>
+    </string-array>
+    <string-array name="persons_hard">
+        <item>Physicist</item>
+        <item>Gymnast</item>
+        <item>Philosopher</item>
+        <item>Psychologist</item>
+        <item>Landlord</item>
+        <item>Prince</item>
+        <item>Judge</item>
+        <item>Receptionist</item>
+        <item>Cashier</item>
+        <item>Lawyer</item>
+        <item>Waiter</item>
+        <item>Customer</item>
+        <item>Wife</item>
+        <item>Addict</item>
+        <item>Serial killer</item>
+        <item>Orphan</item>
+        <item>Movie director</item>
+        <item>Actor</item>
+        <item>Investor</item>
+        <item>Politician</item>
+        <item>Coach</item>
+        <item>Salesman</item>
+        <item>Flight attendant</item>
+        <item>Social media influencer</item>
+        <item>Pedestrian</item>
+        <item>Model</item>
+        <item>Translator</item>
+        <item>Descendant</item>
+        <item>Journalist</item>
+        <item>Pope</item>
+        <item>Dictator</item>
+        <item>Gladiator</item>
+    </string-array>
+
+    <string-array name="actions_easy">
+        <item>Jump</item>
+        <item>Rise</item>
+        <item>Spill</item>
+        <item>Brush</item>
+        <item>Shower</item>
+        <item>Rain</item>
+        <item>Hand shake</item>
+        <item>Stop</item>
+        <item>Swing</item>
+        <item>Dance</item>
+        <item>Crack</item>
+        <item>Play</item>
+        <item>Ask</item>
+        <item>Win</item>
+        <item>Decrease</item>
+        <item>Find</item>
+        <item>Smile</item>
+        <item>Work</item>
+        <item>Leave</item>
+        <item>Enter</item>
+        <item>Wave</item>
+        <item>Dunk</item>
+        <item>Throw</item>
+        <item>Swim</item>
+        <item>Wink</item>
+        <item>Shout</item>
+        <item>Drool</item>
+        <item>Clap</item>
+        <item>Draw</item>
+        <item>Scribble</item>
+        <item>Sweat</item>
+        <item>Drive</item>
+        <item>Pick</item>
+        <item>Count</item>
+        <item>Hug</item>
+        <item>Talk</item>
+        <item>Think</item>
+        <item>Rip</item>
+        <item>Tear</item>
+    </string-array>
+
+    <string-array name="actions_medium">
+        <item>Cough</item>
+        <item>Suck</item>
+        <item>Smell</item>
+        <item>Pull</item>
+        <item>Breathe</item>
+        <item>Hit</item>
+        <item>Exercise</item>
+        <item>Grow</item>
+        <item>Iron</item>
+        <item>Slouch</item>
+        <item>Pole-vault</item>
+        <item>Migrate</item>
+        <item>Erupt</item>
+        <item>Replay</item>
+        <item>Tap</item>
+        <item>Explode</item>
+        <item>Hitchhike</item>
+        <item>Merge</item>
+        <item>Die</item>
+        <item>Roar</item>
+        <item>Shove</item>
+        <item>March</item>
+        <item>Survive</item>
+        <item>Believe</item>
+        <item>Criticize</item>
+        <item>Shiver</item>
+        <item>Study</item>
+        <item>Sell</item>
+        <item>Rub</item>
+        <item>Drench</item>
+        <item>Burn</item>
+        <item>Erase</item>
+        <item>Stab</item>
+        <item>Cover</item>
+        <item>Trip</item>
+        <item>Kiss</item>
+        <item>Knock</item>
+        <item>Spray</item>
+        <item>Unzip</item>
+        <item>Shrink</item>
+        <item>Shave</item>
+        <item>Salute</item>
+        <item>Unwrap</item>
+        <item>Braid</item>
+        <item>Duel</item>
+        <item>Juggle</item>
+    </string-array>
+
+    <string-array name="actions_hard">
+        <item>Drown</item>
+        <item>Orbit</item>
+        <item>Import</item>
+        <item>Convert</item>
+        <item>Nod</item>
+        <item>Copy</item>
+        <item>Croak</item>
+        <item>Judge</item>
+        <item>Attach</item>
+        <item>Invade</item>
+        <item>Tie</item>
+        <item>Escape</item>
+        <item>Intercept</item>
+        <item>Brace</item>
+        <item>Injure</item>
+        <item>Divorce</item>
+        <item>Tune</item>
+        <item>Occupy</item>
+        <item>Waste</item>
+        <item>Reward</item>
+        <item>Haul</item>
+        <item>Reel</item>
+        <item>Soar</item>
+        <item>Unclog</item>
+        <item>Lynch</item>
+        <item>Sprain</item>
+        <item>Diet</item>
+        <item>Frisk</item>
+        <item>Disappear</item>
+        <item>Bet</item>
+        <item>Kidnap</item>
+        <item>Graduate</item>
+    </string-array>
+
+    <string-array name="abstract_easy">
+        <item>Time</item>
+        <item>List</item>
+        <item>Old</item>
+        <item>Cross-eyed</item>
+        <item>Fire</item>
+        <item>Goal</item>
+        <item>Lazy</item>
+        <item>Christmas</item>
+        <item>Night</item>
+        <item>Day</item>
+        <item>Group</item>
+        <item>Corner</item>
+        <item>Funny</item>
+        <item>Sad</item>
+        <item>Happy</item>
+        <item>Sick</item>
+        <item>Song</item>
+        <item>Edge</item>
+        <item>Path</item>
+        <item>Party</item>
+        <item>Pile</item>
+        <item>Social Media</item>
+        <item>Midnight</item>
+        <item>Small</item>
+        <item>Split</item>
+        <item>Curve</item>
+        <item>Little</item>
+        <item>Gap</item>
+        <item>Off</item>
+        <item>Round</item>
+        <item>Idea</item>
+    </string-array>
+
+    <string-array name="abstract_medium">
+        <item>Schedule</item>
+        <item>Insomnia</item>
+        <item>Trip</item>
+        <item>Outside</item>
+        <item>Quote</item>
+        <item>Weight</item>
+        <item>Country</item>
+        <item>Thick</item>
+        <item>Point</item>
+        <item>Root</item>
+        <item>Funnel</item>
+        <item>Hunch</item>
+        <item>Quiet</item>
+        <item>Loud</item>
+        <item>Rear</item>
+        <item>Galaxy</item>
+        <item>Itch</item>
+        <item>Free</item>
+        <item>Year</item>
+        <item>Overlap</item>
+        <item>Sports</item>
+        <item>Paragraph</item>
+        <item>Haircut</item>
+        <item>Thursday</item>
+        <item>Gallery</item>
+        <item>Marriage</item>
+        <item>Outer space</item>
+        <item>Friday</item>
+        <item>Grade</item>
+        <item>Safe</item>
+        <item>Expense</item>
+        <item>Disaster</item>
+        <item>Protest</item>
+        <item>Fashion</item>
+        <item>Wealth</item>
+        <item>Surgery</item>
+        <item>Pollution</item>
+        <item>Miniature Golf</item>
+        <item>For sale</item>
+        <item>Hairline</item>
+        <item>Soul</item>
+        <item>Far</item>
+        <item>Four O\'Clock</item>
+        <item>Oxygen</item>
+        <item>Melt</item>
+        <item>Pain</item>
+        <item>Blaze</item>
+        <item>Bright</item>
+        <item>Medium</item>
+        <item>Cold</item>
+        <item>Near</item>
+        <item>Upside Down</item>
+        <item>End</item>
+        <item>Back Ache</item>
+        <item>Rotten</item>
+        <item>Extinct</item>
+
+    </string-array>
+
+    <string-array name="abstract_hard">
+        <item>Aftermath</item>
+        <item>Tribe</item>
+        <item>Simulation</item>
+        <item>Insane</item>
+        <item>Mint</item>
+        <item>Density</item>
+        <item>Tan</item>
+        <item>Vibrate</item>
+        <item>Shallow</item>
+        <item>Internal</item>
+        <item>Unanimous</item>
+        <item>Eclipse</item>
+        <item>Unconscious</item>
+        <item>Blind</item>
+        <item>Morse Code</item>
+        <item>Cross fire</item>
+        <item>Cheap</item>
+        <item>World War I</item>
+        <item>Rubber</item>
+        <item>Support</item>
+        <item>Zip Code</item>
+        <item>Plump</item>
+        <item>Wrinkle</item>
+        <item>Overcast</item>
+        <item>Debt</item>
+        <item>Management</item>
+        <item>Style</item>
+        <item>Capitalism</item>
+        <item>Socialism</item>
+        <item>Future</item>
+        <item>Vowel</item>
+        <item>Ripe</item>
+        <item>Honeymoon</item>
+        <item>Health</item>
+        <item>Adopt</item>
+        <item>Elope</item>
+        <item>Square Inch</item>
+        <item>Word</item>
+        <item>Kindergarten</item>
+        <item>Solo</item>
+        <item>Concussion</item>
+        <item>Lame</item>
+        <item>Civil War</item>
+        <item>Red Hot</item>
+        <item>Green Thumb</item>
+        <item>Grounded</item>
+    </string-array>
+
+    <string-array name="celebrities_easy">
+        <item>Donald Trump</item>
+        <item>Barak Obama</item>
+        <item>Joe Biden</item>
+        <item>Abraham Lincoln</item>
+        <item>Martin Luther King</item>
+        <item>Muhammad Ali</item>
+        <item>Christopher Columbus</item>
+        <item>Albert Einstein</item>
+        <item>Pope Francis</item>
+        <item>Thomas Edison</item>
+        <item>Michael Jordan</item>
+        <item>Tiger Woods</item>
+        <item>The Rock</item>
+    </string-array>
+    <string-array name="celebrities_medium">
+        <item>Ellen Degeneres</item>
+        <item>Usain Bolt</item>
+        <item>Gandhi</item>
+        <item>Miley Cyrus</item>
+        <item>Marilyn Monroe</item>
+        <item>Queen Elizabeth II</item>
+        <item>Bill Gates</item>
+        <item>Walt Disney</item>
+        <item>Neil Armstrong</item>
+        <item>Lionel Messi</item>
+        <item>Babe Ruth</item>
+        <item>Vladimir Putin</item>
+        <item>Kim Jong-un</item>
+        <item>Serena Williams</item>
+        <item>Howard Stern</item>
+        <item>Steve Jobs</item>
+        <item>Peyton Manning</item>
+        <item>Tom Brady</item>
+        <item>LeBron James</item>
+        <item>Justin Bieber</item>
+        <item>Hillary Clinton</item>
+        <item>Oprah Winfrey</item>
+        <item>Kim Kardashian</item>
+    </string-array>
+
+    <string-array name="celebrities_hard">
+        <item>Helen Keller</item>
+        <item>Arnold Schwarzenegger</item>
+        <item>Nelson Mandela</item>
+        <item>Charles Darwin</item>
+        <item>Paul Mcartney</item>
+        <item>Rosa Parks</item>
+        <item>Beethoven</item>
+        <item>Amelia Earhart</item>
+        <item>Stepehn Hawking</item>
+        <item>Eminem</item>
+        <item>Kanye West</item>
+        <item>Jim Carrey</item>
+        <item>Brad Pitt</item>
+        <item>Will Smith</item>
+        <item>Bill Cosby</item>
+    </string-array>
+
+    <string-array name="place_easy">
+        <item>Bathroom</item>
+        <item>Garden</item>
+        <item>Ocean</item>
+        <item>Pool</item>
+        <item>City</item>
+        <item>Road</item>
+        <item>River</item>
+        <item>Tennis court</item>
+        <item>Football field</item>
+        <item>Baseball field</item>
+        <item>Island</item>
+        <item>Airport</item>
+        <item>Bar</item>
+        <item>Library</item>
+        <item>Church</item>
+        <item>Movie theater</item>
+        <item>Gym</item>
+        <item>Jail</item>
+        <item>Museum</item>
+        <item>School</item>
+        <item>Zoo</item>
+        <item>Arcade</item>
+        <item>Farm</item>
+        <item>Tree house</item>
+        <item>Creek</item>
+        <item>Railroad</item>
+        <item>Sign</item>
+        <item>Beach</item>
+    </string-array>
+
+    <string-array name="place_medium">
+        <item>Texas</item>
+        <item>Stadium</item>
+        <item>North Pole</item>
+        <item>North America</item>
+        <item>South America</item>
+        <item>Africa</item>
+        <item>Europe</item>
+        <item>Asia</item>
+        <item>Australia</item>
+        <item>Antarctica</item>
+        <item>South</item>
+        <item>North</item>
+        <item>Jungle</item>
+        <item>Stage</item>
+        <item>Desert</item>
+        <item>India</item>
+        <item>Garage</item>
+        <item>Solar System</item>
+        <item>Hospital</item>
+        <item>Bakery</item>
+        <item>Bank</item>
+        <item>Bus station</item>
+        <item>Coffee shop</item>
+        <item>Mall</item>
+        <item>Court</item>
+        <item>Laundromat</item>
+        <item>Cruise ship</item>
+        <item>Haunted house</item>
+        <item>Graveyard</item>
+        <item>Downtown</item>
+        <item>Upstairs</item>
+        <item>Ski Jump</item>
+        <item>Well</item>
+        <item>Eiffel Tower</item>
+        <item>Arena</item>
+        <item>Capital</item>
+        <item>East Coast</item>
+    </string-array>
+    <string-array name="place_hard">
+        <item>Montana</item>
+        <item>California</item>
+        <item>Wyoming</item>
+        <item>Alaska</item>
+        <item>Pennsylvania</item>
+        <item>Florida</item>
+        <item>Hawaii</item>
+        <item>New York</item>
+        <item>Rome</item>
+        <item>Pluto</item>
+        <item>South Africa</item>
+        <item>Greece</item>
+        <item>Greenland</item>
+        <item>Rocky mountains</item>
+        <item>Hotel</item>
+        <item>Lab</item>
+        <item>Pharmacy</item>
+        <item>Morgue</item>
+        <item>Nowhere</item>
+        <item>Chocolate factory</item>
+        <item>Aquarium</item>
+        <item>Club</item>
+        <item>Amusement park</item>
+        <item>Funeral home</item>
+        <item>Pier</item>
+        <item>Nursing home</item>
+        <item>Palace</item>
+        <item>Cockpit</item>
+        <item>Middle East</item>
+        <item>Shopping Center</item>
+        <item>Great Britain</item>
+        <item>Elevator</item>
+        <item>Los Angeles</item>
+        <item>University</item>
+        <item>Amazon River</item>
+        <item>Penitentiary</item>
+        <item>Vacant Lot</item>
+        <item>San Francisco</item>
+        <item>New England</item>
+    </string-array>
+    <string-array name="animals_easy">
+        <item>Penguin</item>
+        <item>Dog</item>
+        <item>Cat</item>
+        <item>Worm</item>
+        <item>Panda</item>
+        <item>Toad</item>
+        <item>Fish</item>
+        <item>Giraffe</item>
+        <item>Reindeer</item>
+        <item>Turtle</item>
+        <item>Owl</item>
+        <item>Pig</item>
+        <item>Wolf</item>
+        <item>Horse</item>
+        <item>Snake</item>
+        <item>Rooster</item>
+        <item>Bear</item>
+        <item>Starfish</item>
+        <item>Spider</item>
+        <item>Duck</item>
+        <item>Sheep</item>
+        <item>Lamb</item>
+        <item>Tiger</item>
+        <item>Eel</item>
+        <item>Ladybug</item>
+        <item>Mouse</item>
+        <item>Zebra</item>
+    </string-array>
+    <string-array name="animals_medium">
+        <item>Skunk</item>
+        <item>Ape</item>
+        <item>Stork</item>
+        <item>Elephant</item>
+        <item>Swordfish</item>
+        <item>Flamingo</item>
+        <item>Camel</item>
+        <item>Raccoon</item>
+        <item>Anteater</item>
+        <item>Llama</item>
+        <item>Walrus</item>
+        <item>Mosquito</item>
+        <item>Crocodile</item>
+        <item>Whale</item>
+        <item>Koala</item>
+        <item>Porcupine</item>
+        <item>Kangaroo</item>
+        <item>Seal</item>
+        <item>Coyote</item>
+        <item>Hippopotamus</item>
+        <item>Polar Bear</item>
+        <item>Moth</item>
+        <item>Tadpole</item>
+        <item>Hornet</item>
+        <item>Woodpecker</item>
+        <item>Bull</item>
+        <item>Alpaca</item>
+        <item>Bat</item>
+        <item>Gecko</item>
+        <item>Hedgehog</item>
+        <item>Narwhal</item>
+
+    </string-array>
+    <string-array name="animals_hard">
+        <item>Clam</item>
+        <item>Anteater</item>
+        <item>Panther</item>
+        <item>Puma</item>
+        <item>Porpoise</item>
+        <item>Prairie dog</item>
+        <item>Donkey</item>
+        <item>Ferret</item>
+        <item>Lemur</item>
+        <item>Guinea pig</item>
+        <item>Warthog</item>
+        <item>Orangutan</item>
+        <item>Aardvark</item>
+        <item>Chameleon</item>
+        <item>Baboon</item>
+        <item>Parasite</item>
+        <item>Naked mole rat</item>
+        <item>Flying Fish</item>
+        <item>Carp</item>
+        <item>Dingo</item>
+        <item>Hyena</item>
+        <item>Pangolin</item>
+        <item>Quail</item>
+        <item>Wolverine</item>
+    </string-array>
+
+
+</resources>

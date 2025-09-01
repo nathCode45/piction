@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="btn_text_size">20sp</dimen>
+    <dimen name="border">2dp</dimen>
+    <dimen name="enter_btn_bottom">15dp</dimen>
+    <dimen name="enter_btn_end">10dp</dimen>
+    <dimen name="enter_btn_start">10dp</dimen>
+    <dimen name="enter_btn_height">100dp</dimen>
+    <dimen name="score_textsize">100sp</dimen>
+    <dimen name="switchEnd">16dp</dimen>
+    <dimen name="button_corner_radius">8dp</dimen>
+</resources>

@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.ncore.piction.PreGame">
+
+
+    <TextView
+        android:id="@+id/tvSetupTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="@string/set_up"
+        style="@style/text.title"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:id="@+id/tbNav"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="?attr/actionBarSize"-->
+<!--        android:background="?attr/colorPrimary"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:title="Set-up"-->
+<!--        app:popupTheme="@style/AppTheme" />-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSetupTitle"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvCaptionWordTheme"
+                style="@style/text.label.settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="32dp"
+                android:paddingTop="16dp"
+                android:paddingEnd="8dp"
+                android:text="Select Word Categories:"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!--            <ListView-->
+            <!--                android:id="@+id/lvWordListOptions"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="0dp"-->
+            <!--                android:layout_marginTop="8dp"-->
+            <!--                android:divider="@null"-->
+            <!--                app:layout_constraintTop_toBottomOf="@id/tvCaptionWordTheme"/>-->
+
+            <LinearLayout
+                android:id="@+id/llWordListOptions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@id/tvCaptionWordTheme" />
+
+            <TextView
+                android:id="@+id/tvDifficulty"
+                style="@style/text.label.settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/word_difficulty"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/divider" />
+
+            <CheckBox
+                android:id="@+id/cbEasy"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="?android:attr/listChoiceIndicatorMultiple"
+                android:button="@null"
+                app:layout_constraintStart_toStartOf="@id/tvDifficulty"
+                app:layout_constraintTop_toBottomOf="@id/tvDifficulty" />
+
+            <CheckBox
+                android:id="@+id/cbMedium"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="8dp"
+                android:background="?android:attr/listChoiceIndicatorMultiple"
+                android:button="@null"
+                app:layout_constraintStart_toStartOf="@id/tvDifficulty"
+                app:layout_constraintTop_toBottomOf="@+id/cbEasy" />
+
+            <CheckBox
+                android:id="@+id/cbHard"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="8dp"
+                android:background="?android:attr/listChoiceIndicatorMultiple"
+                android:button="@null"
+                app:layout_constraintStart_toStartOf="@id/tvDifficulty"
+                app:layout_constraintTop_toBottomOf="@+id/cbMedium" />
+
+            <View
+                android:id="@+id/divDifficultyBottom"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintTop_toBottomOf="@id/cbHard" />
+
+            <TextView
+                android:id="@+id/tvKeepScore"
+                style="@style/text.label.settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:text="Keep Score"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divDifficultyBottom" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/swtKeepScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/switchEnd"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tvKeepScore" />
+
+
+            <EditText
+                android:id="@+id/etTeam1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:ems="7"
+                style="@style/text"
+                android:hint="@string/team_1_name"
+                android:inputType="textPersonName"
+                android:maxLength="18"
+                android:textAlignment="center"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvKeepScore"
+
+                />
+
+            <EditText
+                android:id="@+id/etTeam2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:ems="7"
+                style="@style/text"
+                android:hint="@string/team_2_name"
+                android:inputType="textPersonName"
+                android:maxLength="18"
+                android:textAlignment="center"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvKeepScore" />
+
+            <TextView
+                android:id="@+id/tvAlternateTurns"
+                style="@style/text.label.settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="14dp"
+                android:text="@string/alternate_every_turn"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etTeam1" />
+
+            <TextView
+                android:id="@+id/tvExplainAlternate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                style="@style/text"
+                android:text="@string/alternate_every_turn_description"
+                android:textSize="14sp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@id/swtAlternateTurns"
+                app:layout_constraintStart_toStartOf="@+id/tvAlternateTurns"
+                app:layout_constraintTop_toBottomOf="@+id/tvAlternateTurns" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/swtAlternateTurns"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="25dp"
+                android:layout_marginBottom="8dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/tvAlternateTurns"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvAlternateTurns" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
+
+            <TextView
+                android:id="@+id/tvAllPlay"
+                style="@style/text.label.settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="14dp"
+                android:text="@string/all_play_category"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                style="@style/text"
+                android:text="@string/if_included_both_teams_will_attempt_to_draw_words_from_this_category_simultaneously"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@id/swtAllPlay"
+                app:layout_constraintStart_toStartOf="@+id/tvAllPlay"
+                app:layout_constraintTop_toBottomOf="@+id/swtAllPlay" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/swtAllPlay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/switchEnd"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvAllPlay" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+            <TextView
+                android:id="@+id/tvIncludeTimer"
+                style="@style/text.label.settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/include_timer"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+            <TextView
+                android:id="@+id/tvTimerDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                style="@style/text"
+                android:text="@string/guess_the_word_before_times_runs_out"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/tvIncludeTimer"
+                app:layout_constraintTop_toBottomOf="@+id/tvIncludeTimer" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/swtIncludeTimer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/switchEnd"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvIncludeTimer" />
+
+            <EditText
+                android:id="@+id/etTimerLength"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:ems="2"
+                style="@style/text"
+                android:inputType="number"
+                android:visibility="gone"
+                app:layout_constraintBaseline_toBaselineOf="@+id/tvSeconds"
+                app:layout_constraintStart_toStartOf="@+id/tvTimerDescription" />
+
+            <TextView
+                android:id="@+id/tvSeconds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                style="@style/text"
+                android:text="@string/seconds"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/etTimerLength"
+                app:layout_constraintTop_toBottomOf="@+id/tvTimerDescription" />
+
+            <View
+                android:id="@+id/divSkipLimit"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="?android:attr/listDivider"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etTeam1" />
+
+            <TextView
+                android:id="@+id/tvSkipLimit"
+                style="@style/text.label.settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/word_skip_limit"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="@+id/tvIncludeTimer"
+                app:layout_constraintTop_toBottomOf="@+id/tvExplainAlternate" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="@+id/tvSkipLimit"
+                app:layout_constraintTop_toBottomOf="@+id/tvSkipLimit">
+
+
+                <RadioButton
+                    android:id="@+id/rbInfiniteSkip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/text"
+                    android:text="@string/infinite" />
+
+                <RadioButton
+                    android:id="@+id/rbLimitedSkip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/text"
+                    android:text="@string/limited" />
+            </RadioGroup>
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/llWordListOptions" />
+
+            <EditText
+                android:id="@+id/etSkipLimit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="2"
+                android:textAlignment="center"
+                android:inputType="number"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/radioGroup2"
+                app:layout_constraintStart_toEndOf="@+id/radioGroup2" />
+
+            <TextView
+                android:id="@+id/tvSkips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                style="@style/text"
+                android:text="@string/skips_per_team"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/etSkipLimit"
+                app:layout_constraintStart_toEndOf="@+id/etSkipLimit" />
+
+            <Button
+                android:id="@+id/btnStart"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/enter_btn_height"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/colorsecondary_button"
+                android:onClick="onNext"
+                style="@style/text"
+                android:text="@string/start_game"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etTimerLength" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:id="@+id/buttonSpacer"
+                app:layout_constraintTop_toBottomOf="@id/btnStart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+            <TextView
+                android:id="@+id/tvEasy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                style="@style/text"
+                android:text="@string/easy"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/cbEasy"
+                app:layout_constraintStart_toEndOf="@+id/cbEasy"
+                app:layout_constraintTop_toTopOf="@+id/cbEasy" />
+
+            <TextView
+                android:id="@+id/tvMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                style="@style/text"
+                android:text="@string/medium"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/cbHard"
+                app:layout_constraintStart_toEndOf="@+id/cbMedium"
+                app:layout_constraintTop_toBottomOf="@+id/cbEasy" />
+
+            <TextView
+                android:id="@+id/tvHard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                style="@style/text"
+                android:text="@string/hard"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/cbHard"
+                app:layout_constraintStart_toEndOf="@+id/cbHard"
+                app:layout_constraintTop_toBottomOf="@+id/cbMedium" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

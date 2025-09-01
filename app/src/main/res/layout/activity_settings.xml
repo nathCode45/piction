@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.ncore.piction.Settings">
+
+
+
+    <TextView
+        android:id="@+id/tvAnimations"
+        style="@style/text.label.settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+
+        android:text="@string/animations"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divDifficultyBottom" />
+
+    <View
+        android:id="@+id/divAnimationsBottom"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintTop_toBottomOf="@id/tvAnimations" />
+
+    <TextView
+        android:id="@+id/tvAlarmToneTitle"
+        style="@style/text.label.settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+
+        android:text="@string/alarm_tone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tbNav"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme"
+            app:title="Settings" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/tvCurrentTone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        style="@style/text"
+        android:text="@string/ringtone"
+        android:onClick="startRingTonePicker"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvAlarmToneTitle"
+        app:layout_constraintEnd_toStartOf="@+id/imageView4" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/divDifficultyBottom"
+        android:background="?android:attr/listDivider"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tvAlarmToneTitle"/>
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginEnd="8dp"
+        android:onClick="startRingTonePicker"
+        app:layout_constraintBottom_toBottomOf="@+id/tvCurrentTone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvCurrentTone"
+        app:srcCompat="@drawable/ic_navigate_next" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/swtAnimations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="@dimen/switchEnd"
+        android:onClick="onProcessAnimationsSwitch"
+        app:layout_constraintBottom_toTopOf="@+id/divAnimationsBottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/divDifficultyBottom" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

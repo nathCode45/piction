@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.ncore.piction.FirstTurn">
+    <TextView
+        android:id="@+id/tvDirect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="4dp"
+        android:textSize="25sp"
+        style="@style/text"
+        android:text="@string/hand_the_device_to"
+        android:textAlignment="center"/>
+    <TextView
+        android:id="@+id/tvTeamFirst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDirect"
+        android:layout_centerHorizontal="true"
+        style="@style/text"
+        android:text="@string/team_1"
+        android:textSize="25sp"/>
+
+    <Button
+        android:id="@+id/btnStartFirstTurn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/enter_btn_height"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="onStartFirst"
+        android:background="@drawable/colorprimary_button"
+        android:text="@string/start_turn" />
+
+</RelativeLayout>

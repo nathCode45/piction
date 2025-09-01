@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="app.ncore.piction"
+    >
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="app.ncore.piction.Info"
+            android:parentActivityName="app.ncore.piction.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="app.ncore.piction.MainActivity" />
+        </activity>
+        <activity
+            android:name="app.ncore.piction.Settings"
+            android:parentActivityName="app.ncore.piction.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="app.ncore.piction.MainActivity" />
+        </activity>
+        <activity android:name="app.ncore.piction.FirstTurn" />
+        <activity android:name="app.ncore.piction.WordGenerator" />
+        <activity android:name="app.ncore.piction.Gameplay" />
+        <activity android:name="app.ncore.piction.PreGame" />
+        <activity android:name="app.ncore.piction.BetweenTurn" />
+        <activity android:name="app.ncore.piction.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
