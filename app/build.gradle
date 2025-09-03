@@ -1,22 +1,36 @@
+import java.util.Properties
+import java.io.FileInputStream
+
 apply plugin: 'com.android.application'
+
+def keystorePropertiesFile = rootProject.file("keystore.properties")
+def keystoreProperties = new Properties()
+if (keystorePropertiesFile.exists()) {
+    keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+}
+
 
 android {
     signingConfigs {
         release {
-            storeFile file('C:\\Users\\ncore\\OneDrive\\Mobile Apps\\App Keys-DO NOT DELTE\\piction_keystore.jks')
-            storePassword 'releasingIt89AF9G5'
-            keyPassword 'ThisOneIsDifferent67a'
-            keyAlias 'key_release'
+            if (keystorePropertiesFile.exists()) {
+                storeFile file(keystoreProperties["storeFile"])
+                storePassword keystoreProperties["storePassword"]
+                keyAlias keystoreProperties["keyAlias"]
+                keyPassword keystoreProperties["keyPassword"]
+            }
         }
     }
-    compileSdkVersion 30
+
+
+    compileSdkVersion 35
     buildToolsVersion "30.0.0"
 
 
     defaultConfig {
         applicationId "app.ncore.piction"
         minSdkVersion 21
-        targetSdkVersion 30
+        targetSdkVersion 35
         versionCode 3
         versionName "1.2"
 
@@ -37,17 +51,27 @@ android {
 
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
-    implementation 'androidx.appcompat:appcompat:1.2.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
-    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    implementation 'androidx.cardview:cardview:1.0.0'
-    implementation 'com.google.android.material:material:1.2.1'
 
-    // This dependency is downloaded from the Google’s Maven repository.
-    // So, make sure you also include that repository in your project's build.gradle file.
-    implementation 'com.google.android.play:core:1.10.0'
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    // Core AndroidX
+    implementation 'androidx.core:core-ktx:1.15.0'              // Core extensions (was missing)
+    implementation 'androidx.appcompat:appcompat:1.7.0'         // UI compat (was 1.2.0)
+    implementation 'androidx.constraintlayout:constraintlayout:2.2.0' // Layouts (was 2.0.1)
+    implementation 'androidx.cardview:cardview:1.0.0'           // Still current, no update
+    implementation 'com.google.android.material:material:1.12.0' // Material Components (was 1.2.1)
+
+    // Legacy support (⚠️ Deprecated – try to remove if possible)
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    // Google Play Core (in-app updates, reviews, etc.)
+    implementation 'com.google.android.play:core:1.10.3'
+    // If you use Kotlin, prefer:
+    // implementation 'com.google.android.play:core-ktx:1.8.1'
+
+    // Unit testing
+    testImplementation 'junit:junit:4.13.2'                      // was 4.12
+
+    // AndroidX testing
+    androidTestImplementation 'androidx.test.ext:junit:1.2.1'    // was 1.1.2
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.1' // was 3.3.0
 
 }
